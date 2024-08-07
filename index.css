@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+header {
+    padding: 16px 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo do header */
+    justify-content: space-between; /* Espaça a imagem, o título e o menu */
+    width: 100%;
+    max-width: 800px; /* Defina um tamanho máximo para o container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    text-align: center;
+}
+
+.container img {
+    width: 50px; 
+    height: auto; 
+}
+
+.container h1 {
+    flex-grow: 1; 
+}
+
+nav {
+    margin-left: auto; /* Empurra o menu para a direita */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+   text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre a tabela e o formulário */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 600px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 400px;
+}

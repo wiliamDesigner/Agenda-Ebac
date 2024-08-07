@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Exercício da tabela da EBAC</title>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="container">
+                <img src="7996558.png" alt="">
+                <h1>Agenda</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </nav>    
+            </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody id="agenda-body" >
+                    <tr>
+                        <td>1-contato</td>
+                        <td>123456789</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="formulario">
+            <div class="form">
+                <form id="cadastro-form">
+                    <h3>Cadastro de telefone</h3>
+                    <input type="text" id="nome" placeholder="Seu nome" required  >
+                    <input type="tel" id="telefone" placeholder="Digite seu telefone" pattern="\d*" inputmode="numeric" maxlength="15" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
